@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({ name: '', email: '', phone_no: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,7 +19,7 @@ const handleSubmit = async (e) => {
 
     if (response.ok) {
       alert('Thank you for contacting us!');
-      setFormData({ name: '', phone_no: '', email: '', message: '' });
+      setFormData({ name: '', phone: '', email: '', message: '' });
     } else {
       alert('Failed to send message. Please try again.');
     }
@@ -54,7 +54,7 @@ const handleSubmit = async (e) => {
     <input
         type="number"
         name="phone"
-        placeholder="Your Phone no"
+        placeholder="Your Phone number"
         value={formData.phone}
         onChange={handleChange}
         className="w-full p-2 mb-4 border rounded"
