@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center p-4 bg-blue-800 text-white relative">
-      <div className="text-2xl font-bold">Shreeji CNG Re-testing</div>
+      <div className="text-2xl font-bold">Shreeji CNG</div>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-6">
