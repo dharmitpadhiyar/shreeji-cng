@@ -11,7 +11,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await fetch( "https://formspree.io/f/mdkzvagn", { // replace with your Formspree endpoint
+    const response = await fetch( "https://formspree.io/f/xldnkqvo", { // replace with your Formspree endpoint
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
