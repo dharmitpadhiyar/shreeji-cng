@@ -55,7 +55,7 @@ const handleSubmit = async (e) => {
         type="number"
         name="phone"
         placeholder="Your Phone no"
-        value={formData.phone_no}
+        value={formData.phone}
         onChange={handleChange}
         className="w-full p-2 mb-4 border rounded"
         required
