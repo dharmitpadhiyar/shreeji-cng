@@ -19,7 +19,7 @@ const handleSubmit = async (e) => {
 
     if (response.ok) {
       alert('Thank you for contacting us!');
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', phone_no: '', email: '', message: '' });
     } else {
       alert('Failed to send message. Please try again.');
     }
